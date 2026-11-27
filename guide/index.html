@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل استخدام تطبيق أنيس | Anees User Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">أ</div>
+      <div>
+        <div class="brand-title">أنيس</div>
+        <div class="brand-sub" data-i18n="brand_sub">كن أنت النور بين السطور</div>
+      </div>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="ar">العربية</button>
+      <button class="lang-btn" data-lang="en">English</button>
+      <button class="lang-btn" data-lang="fr">Français</button>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="searchInput" class="search-input" placeholder="ابحث في الدليل..." data-i18n-placeholder="search_placeholder">
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#start"><span class="nav-icon">📖</span><span data-i18n="nav_start">البداية والهيكل الهرمي</span></a></li>
+      <li class="nav-item"><a href="#admin"><span class="nav-icon">👑</span><span data-i18n="nav_admin">مسؤول النظام (الأدمن)</span></a></li>
+      <li class="nav-item"><a href="#books"><span class="nav-icon">📚</span><span data-i18n="nav_books">مسؤول الكتب</span></a></li>
+      <li class="nav-item"><a href="#link"><span class="nav-icon">🔗</span><span data-i18n="nav_link">الرابط (قائد المشرفين)</span></a></li>
+      <li class="nav-item"><a href="#supervisor"><span class="nav-icon">📋</span><span data-i18n="nav_sup">المشرف (قائد الموزعين)</span></a></li>
+      <li class="nav-item"><a href="#distributor"><span class="nav-icon">📦</span><span data-i18n="nav_dist">قائد فريق الموزعين (كتبي)</span></a></li>
+      <li class="nav-item"><a href="#faq"><span class="nav-icon">❓</span><span data-i18n="nav_faq">الأسئلة الشائعة (15 سؤالاً)</span></a></li>
+      <li class="nav-item"><a href="#troubleshoot"><span class="nav-icon">🛠️</span><span data-i18n="nav_troubleshoot">استكشاف الأخطاء وحلولها</span></a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="content">
+    <h1 data-i18n="guide_title">دليل استخدام تطبيق أنيس</h1>
+    <p class="lead-p" data-i18n="brand_sub">كن أنت النور بين السطور — الدليل التفاعلي الشامل لجميع الأدوار والمهام.</p>
+
+    <!-- SECTION 1: START -->
+    <section id="start">
+      <h2 data-i18n="start_title">1. البداية: ما هو تطبيق أنيس والهيكل التنظيمي</h2>
+      <p data-i18n="start_p1">تطبيق «أنيس» هو نظام متكامل مبني على Google Apps Script ومقترن بقاعدة بيانات Google Sheets لإدارة مهام القراءة وتوزيع الكتب ومتابعة الإنجاز الأسبوعي لأسرة أنيس.</p>
+      
+      <div class="callout callout-note">
+        <strong data-i18n="start_rollout">ملاحظة حول خطة الإطلاق: يعمل تطبيق أنيس خلال المرحلة الحالية جنباً إلى جنب مع الجداول القديمة المعتمدة، وسيكون في مرحلة لاحقة المنصة الحصرية المعتمدة لإدخال ومتابعة كافة البيانات.</strong>
+      </div>
+
+      <h3 data-i18n="pyramid_title">الهيكل الهرمي ومسؤوليات الأدوار:</h3>
+      <div class="step-card">
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+          <li data-i18n="pyramid_step1">🔹 <strong>مسؤول الرابطين (الأدمن):</strong> يقود المنظومة ويدير الرابطين وقاعدة البيانات والكتب والأسابيع.</li>
+          <li data-i18n="pyramid_step2">🔹 <strong>الرابط:</strong> يقود فريق المشرفين (يضم نحو 3 مشرفين). يوجد 4 روابط رئيسيين، ويشرف كل رابط على فرعه بالكامل.</li>
+          <li data-i18n="pyramid_step3">🔹 <strong>المشرف:</strong> يقود فريق الموزعين، ويتابع تعبئة بيانات سفراء فرق التوزيع.</li>
+          <li data-i18n="pyramid_step4">🔹 <strong>الموزع:</strong> يقود فريق التسجيل المكون من سفراء القراءة. (الموزعون ليس لديهم حسابات دخول حالياً).</li>
+        </ul>
+        <div class="callout callout-tip" style="margin-top:16px; margin-bottom:0;" data-i18n="pyramid_rule">
+          قاعدة ثابتة: كل رابط ومشرف وموزع هو أيضاً سفير قراءة في أسرة أنيس.
+        </div>
+      </div>
+
+      <h3 data-i18n="silver_title">الفرق الخاصة:</h3>
+      <p data-i18n="silver_desc">الأفرقة الفضية (Silver Teams) وفريق غِراس أنيس (Ghiras) هي فرق نوعية تخضع لإشراف ومتابعة الأدمن مباشرة في توزيع الكتب واعتماد الإنجاز.</p>
+    </section>
+
+    <!-- SECTION 2: ADMIN -->
+    <section id="admin">
+      <h2 data-i18n="admin_title">2. دليل مسؤول النظام (الأدمن - مسؤول الرابطين)</h2>
+      <p data-i18n="admin_intro">يمتلك الأدمن الصلاحية الإدارية الكاملة في التطبيق عبر تبويبات إدخال البيانات، الناقص، الأسابيع، اللوحة، الفرق، الكتب، وكتبي.</p>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div class="step-title" data-i18n="admin_step1_t">تسجيل الدخول للنظام</div>
+        </div>
+        <p data-i18n="admin_step1_d">أدخل اسم الدخول في حقل «اسم الدخول» والرمز السري في حقل «الرمز السري»، ثم اضغط زر «دخول».</p>
+        <div class="shot-container">
+          <img src="img/01_all_login_empty.webp" alt="صفحة تسجيل الدخول" class="shot-img">
+          <div class="shot-caption">الشكل 1: شاشة تسجيل الدخول الموحدة لتطبيق أنيس (سطح المكتب وجوال).</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">2</div>
+          <div class="step-title" data-i18n="admin_step2_t">استعراض الترويسة وقائمة الأسابيع</div>
+        </div>
+        <p data-i18n="admin_step2_d">اختر الأسبوع المطلوب من القائمة المنسدلة في الترويسة، وتنقل بسلاسة بين التبويبات المتاحة.</p>
+        <div class="shot-container">
+          <img src="img/02_admin_header_weeks.webp" alt="الترويسة وقائمة الأسابيع" class="shot-img">
+          <div class="shot-caption">الشكل 2: شريط الترويسة العلوي وقائمة الأسابيع وتبويبات الأدمن الكاملة.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">3</div>
+          <div class="step-title" data-i18n="admin_step3_t">إدخال البيانات ومتابعة الجداول</div>
+        </div>
+        <p data-i18n="admin_step3_d">بدّل بين «جدول الموزعين» و «جدول المشرفين». اكتب الأرقام في الخانات المطلوبة، واضغط زر «حفظ» لتثبيت البيانات.</p>
+        <div class="shot-container">
+          <img src="img/03_admin_data_entry_dist.webp" alt="إدخال البيانات للموزعين" class="shot-img">
+          <div class="shot-caption">الشكل 3: جدول إدخال بيانات الموزعين مع الخلايا الحمراء الناقصة والمجاميع التلقائية.</div>
+        </div>
+        <div class="shot-container">
+          <img src="img/05_admin_data_entry_sup.webp" alt="إدخال البيانات للمشرفين" class="shot-img">
+          <div class="shot-caption">الشكل 4: جدول إدخال بيانات المشرفين ومؤشرات المتابعة.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">4</div>
+          <div class="step-title" data-i18n="admin_step4_t">متابعة قائمة الناقص ورسائل التذكير</div>
+        </div>
+        <p data-i18n="admin_step4_d">استعرض الخانات والفرق الناقصة، وانسخ نص التذكير الجاهز من بطاقة التذكير لإرساله لقادة الفرق عبر تيليجرام.</p>
+        <div class="shot-container">
+          <img src="img/07_admin_missing_list.webp" alt="قائمة الناقص" class="shot-img">
+          <div class="shot-caption">الشكل 5: قائمة النواقص مع بطاقة التذكير الجاهزة للمشاركة عبر تيليجرام.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">5</div>
+          <div class="step-title" data-i18n="admin_step5_t">إدارة الأسابيع والمزامنة</div>
+        </div>
+        <p data-i18n="admin_step5_d">أغلق الأسبوع المكتمل بعد خلوه من النواقص، أو حدد الأسبوع كـ «إجازة»، أو أعد فتح أسبوع مغلق استثنائياً.</p>
+        <div class="shot-container">
+          <img src="img/09_admin_weeks_overview.webp" alt="إدارة الأسابيع" class="shot-img">
+          <div class="shot-caption">الشكل 6: بطاقات دورة الأسابيع (مفتوح، مغلق، إجازة) وبطاقة المزامنة.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">6</div>
+          <div class="step-title" data-i18n="admin_step6_t">لوحة المؤشرات وسد النقص</div>
+        </div>
+        <p data-i18n="admin_step6_d">تابع تقارير الأداء الأسبوعية والشهرية والسنوية وترتيب الفرق، وراجع حوض سد النقص واحتساب الفائض.</p>
+        <div class="shot-container">
+          <img src="img/11_admin_dashboard_weekly.webp" alt="اللوحة الأسبوعية" class="shot-img">
+          <div class="shot-caption">الشكل 7: لوحة مؤشرات الأداء والالتزام الأسبوعي وترتيب الفرق.</div>
+        </div>
+        <div class="shot-container">
+          <img src="img/15_admin_dashboard_shortage.webp" alt="سد النقص" class="shot-img">
+          <div class="shot-caption">الشكل 8: شاشة إدارة واحتساب سد النقص ونقل الفائض.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">7</div>
+          <div class="step-title" data-i18n="admin_step7_t">إدارة الفرق والعرض ثلاثي الأبعاد</div>
+        </div>
+        <p data-i18n="admin_step7_d">تحكم بشجرة الفرق 2D، عيّن أو انقل القادة، وافتح «عرض ثلاثي الأبعاد» لغابة أنيس الحية أو انسخ رابط العرض التفاعلي.</p>
+        <div class="shot-container">
+          <img src="img/16_admin_teams_tree.webp" alt="شجرة الفرق" class="shot-img">
+          <div class="shot-caption">الشكل 9: شجرة الهيكل التنظيمي الهرمي وخيارات التحكم والتوسيع.</div>
+        </div>
+        <div class="shot-container">
+          <img src="img/24_admin_3d_forest.webp" alt="غابة أنيس ثلاثية الأبعاد" class="shot-img">
+          <div class="shot-caption">الشكل 10: غابة أنيس الحية التفاعلية ثلاثية الأبعاد (3D Forest).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: BOOKS MANAGER -->
+    <section id="books">
+      <h2 data-i18n="books_title">3. دليل مسؤول الكتب</h2>
+      <p data-i18n="books_intro">يختص مسؤول الكتب (والأدمن) بإدارة مكتبة أنيس الرقمية، رفع ملفات PDF، وتقسيمها وتوزيعها آلياً.</p>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div class="step-title" data-i18n="books_step1_t">إضافة كتاب جديد</div>
+        </div>
+        <p data-i18n="books_step1_d">اضغط زر «+ كتاب جديد»، حدد العنوان وعدد الصفحات ونطاق الصفحات واسم «الرابط المسؤول» (كنص حر)، وارفع ملف الـ PDF.</p>
+        <div class="shot-container">
+          <img src="img/28_admin_books_add_modal.webp" alt="إضافة كتاب جديد" class="shot-img">
+          <div class="shot-caption">الشكل 11: نافذة إضافة كتاب جديد وبيانات النطاق والملف.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">2</div>
+          <div class="step-title" data-i18n="books_step2_t">تقسيم الكتاب إلى أجزاء متساوية</div>
+        </div>
+        <p data-i18n="books_step2_d">اضغط زر «تقسيم» في بطاقة الكتاب. يبدأ النظام عبر مشغل خلفي بقص الـ PDF لأجزاء من 10 صفحات ويولد روابط مستقلة.</p>
+        <div class="shot-container">
+          <img src="img/29_admin_books_parts_view.webp" alt="أجزاء الكتاب" class="shot-img">
+          <div class="shot-caption">الشكل 12: استعراض أجزاء الكتاب المقصوصة وروابطها وزر نسخ الروابط.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">3</div>
+          <div class="step-title" data-i18n="books_step3_t">توزيع أجزاء الكتاب واعتماده</div>
+        </div>
+        <p data-i18n="books_step3_d">اضغط زر «توزيع الأجزاء»، استعرض التوزيع الآلي العادل للأجزاء على فرق الموزعين النشطة، ثم اضغط «اعتماد التوزيع».</p>
+        <div class="shot-container">
+          <img src="img/31_admin_distribution_screen.webp" alt="توزيع الكتب" class="shot-img">
+          <div class="shot-caption">الشكل 13: شاشة توزيع أجزاء الكتاب واعتماد التخصيص.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: LINK -->
+    <section id="link">
+      <h2 data-i18n="link_title">4. دليل الرابط (قائد فريق المشرفين)</h2>
+      <p data-i18n="link_intro">الرابط مسؤول عن متابعة فرعه الإشرافي والتأكد من سير عمل المشرفين وفرق التوزيع التابعة له.</p>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div class="step-title" data-i18n="link_step1_t">إدخال بيانات الفرع الإشرافي</div>
+        </div>
+        <p data-i18n="link_step1_d">أدخل إلى تبويب «إدخال البيانات» واملأ حقول تقرير عمل المشرفين ومؤشرات الفرع التابع لك.</p>
+        <div class="shot-container">
+          <img src="img/34_link_data_entry.webp" alt="إدخال البيانات للرابط" class="shot-img">
+          <div class="shot-caption">الشكل 14: جدول إدخال البيانات المخصص لفرع الرابط فقط.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">2</div>
+          <div class="step-title" data-i18n="link_step2_t">استعراض هيكل الفرع</div>
+        </div>
+        <p data-i18n="link_step2_d">في تبويب «الفرق»، يرى الرابط شجرة تنظيمية مقتصرة على المشرفين والموزعين التابعين لفرعه فقط.</p>
+        <div class="shot-container">
+          <img src="img/35_link_branch_tree.webp" alt="شجرة فرع الرابط" class="shot-img">
+          <div class="shot-caption">الشكل 15: شجرة الفرق لفرع الرابط المستقل.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">3</div>
+          <div class="step-title" data-i18n="link_step3_t">تبويب كتبي والتأشير بالنيابة</div>
+        </div>
+        <p data-i18n="link_step3_d">استعرض أجزاء الكتب الموزعة على فرق فرعك. يمكنك الضغط على زر «تم» نيابة عن أي فريق، ويُقيد ذلك تلقائياً في سجل الرقابة.</p>
+        <div class="shot-container">
+          <img src="img/36_link_myparts_onbehalf.webp" alt="كتبي للرابط" class="shot-img">
+          <div class="shot-caption">الشكل 16: تبويب «كتبي» لدى الرابط وخيار التأشير «تم» بالنيابة عن الأفرقة.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: SUPERVISOR -->
+    <section id="supervisor">
+      <h2 data-i18n="sup_title">5. دليل المشرف (قائد فريق الموزعين)</h2>
+      <p data-i18n="sup_intro">يقود المشرف فرق التوزيع ويضمن دقة البيانات الأسبوعية ومتابعة تقصير السفراء.</p>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div class="step-title" data-i18n="sup_step1_t">تعبئة بيانات فرق التوزيع</div>
+        </div>
+        <p data-i18n="sup_step1_d">أدخل أعداد السفراء والملتزمين والصفحات الإضافية والمنسحبين لكل فريق تسجيل تابع لك واضغط «حفظ».</p>
+        <div class="shot-container">
+          <img src="img/38_supervisor_data_entry.webp" alt="إدخال البيانات للمشرف" class="shot-img">
+          <div class="shot-caption">الشكل 17: جدول إدخال بيانات فرق التوزيع للمشرف.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">2</div>
+          <div class="step-title" data-i18n="sup_step2_t">متابعة النواقص واستخراج التذكيرات</div>
+        </div>
+        <p data-i18n="sup_step2_d">استخدم تبويب «الناقص» لحصر الخانات غير المكتملة وتذكير قادة الفرق باستكمالها فوراً.</p>
+        <div class="shot-container">
+          <img src="img/39_supervisor_missing.webp" alt="الناقص للمشرف" class="shot-img">
+          <div class="shot-caption">الشكل 18: تقرير النواقص المخصص لفرق المشرف وبطاقة التذكير.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: DISTRIBUTOR LEADER -->
+    <section id="distributor">
+      <h2 data-i18n="dist_title">6. دليل قائد فريق الموزعين (تبويب كتبي)</h2>
+      <p data-i18n="dist_intro">يستخدم قائد فريق الموزعين تبويب «كتبي» لاستلام أجزاء القراءة المخصصة لفريقه وتأكيد إنجازها.</p>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">1</div>
+          <div class="step-title" data-i18n="dist_step1_t">استلام وتحميل أجزاء الكتب</div>
+        </div>
+        <p data-i18n="dist_step1_d">افتح تبويب «كتبي»، واطلع على اسم الكتاب ورقم الجزء ورابط تحميل ملف الـ PDF المخصص لفريقك.</p>
+        <div class="shot-container">
+          <img src="img/40_distleader_myparts.webp" alt="تبويب كتبي" class="shot-img">
+          <div class="shot-caption">الشكل 19: تبويب «كتبي» واستعراض الجزء المسند ومؤشر تاريخ الحذف التلقائي.</div>
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-num">2</div>
+          <div class="step-title" data-i18n="dist_step2_t">التأشير على الإنجاز بزر «تم»</div>
+        </div>
+        <p data-i18n="dist_step2_d">بعد انتهاء قراءة الجزء، اضغط زر «تم» ليتم تسجيل إنجاز الفريق فوراً ويظهر تاريخ الحذف التلقائي.</p>
+        <div class="callout callout-caution">
+          <strong data-i18n="dist_step3_d">احرص على تنبيه السفراء؛ حيث تُحذف ملفات الأجزاء نهائياً من Google Drive بعد 21 يوماً من إنجاز جميع الأفرقة للجزء عبر مشغل يومي عند الساعة 05:00 فجراً.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FAQ -->
+    <section id="faq">
+      <h2 data-i18n="faq_title">7. الأسئلة الشائعة (FAQ)</h2>
+      
+      <div class="faq-item">
+        <div class="faq-q">س1: ما هو دور تطبيق أنيس الأساسي؟</div>
+        <div class="faq-a">ج: إدارة المنظومة الإدارية لأسبوع القراءة، تسجيل الإنجازات الأسبوعية، توزيع أجزاء الكتب المقصوصة رقمياً، واحتساب نسب التزام السفراء والأفرقة آلياً وبدقة.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س2: ما هو التسلسل الهرمي المعتمد في أسرة أنيس؟</div>
+        <div class="faq-a">ج: مسؤول الرابطين (الأدمن) ← 4 روابط (كل رابط يقود فريق مشرفين) ← المشرفون (كل مشرف يقود فريق موزعين) ← الموزعون (كل موزع يقود فريق تسجيل يضم السفراء).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س3: هل يملك الموزعون العاديون حسابات دخول للتطبيق؟</div>
+        <div class="faq-a">ج: لا؛ في الوقت الحالي لا يملك الموزعون العاديون حسابات دخول، والوصول متاح لقادة فرق الموزعين والمشرفين والروابط ومسؤولي النظام فقط.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س4: هل يوجد دور "إدارة" (Management) منفصل في التطبيق؟</div>
+        <div class="faq-a">ج: لا؛ التطبيق يحتوي على مستوى صلاحية وحيد عالي المستوى هو الأدمن (ADMIN)، ولا يوجد دور باسم "إدارة" في النظام البرمجي.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س5: ماذا تعني الخانات الحمراء في جدول إدخال البيانات؟</div>
+        <div class="faq-a">ج: تعني أن هناك بيانات مفقودة أو مهام لم تُحدد حالتها بعد، ويجب استكمالها لتصبح الخلية طبيعية ويتاح إغلاق الأسبوع.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س6: كيف يتم حفظ البيانات أثناء الإدخال؟</div>
+        <div class="faq-a">ج: عند تعديل أي خانة يظهر عدد التعديلات على زر الحفظ: «حفظ (N)»، وبالضغط عليه تُرسل التعديلات وتُثبت فورياً دون إعادة تحميل الصفحة.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س7: متى يمكن إغلاق الأسبوع؟</div>
+        <div class="faq-a">ج: لا يمكن إغلاق الأسبوع إلا بعد استكمال 100% من بيانات الفرق وخلو الجداول من أي خانات حمراء، ويقوم الأدمن بإغلاقه لترحيل الإحصائيات.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س8: ما هو أسبوع "الإجازة"؟</div>
+        <div class="faq-a">ج: خيار يتيحه الأدمن لتعطيل الأسبوع في المناسبات والأعياد دون التأثير على تسلسل ونسب الالتزام السنوية للأفرقة.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س9: كيف يتم تعويض النقص في القراءة؟</div>
+        <div class="faq-a">ج: يتم رصد الصفحات المقصر فيها في حوض النقص، وعند إنجاز صفحات تعويضية تُسجل في خانة "سد النقص"، ويقوم النظام بنقل الفائض الزائد عن النقص آلياً لحساب الصفحات الإضافية.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س10: ما هي الأفرقة الفضية وفريق غراس؟</div>
+        <div class="faq-a">ج: الأفرقة الفضية (Silver Teams) هي فرق ذات طبيعة خاصة، وفريق غراس مسار تدريبي نوعي، ويشرف عليهما الأدمن مباشرة في توزيع الكتب والمتابعة.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س11: كيف يتم تقسيم الكتب بصيغة PDF؟</div>
+        <div class="faq-a">ج: يعتمد التطبيق محركاً برمجياً داخلياً خالصاً (pdf-lib) يقص الكتاب إلى أجزاء (10 صفحات لكل جزء) في غضون ثوانٍ ودون إرسال الملفات لأي خادم خارجي.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س12: ماذا يعني زر «تقسيم جديد» في بطاقة الكتاب؟</div>
+        <div class="faq-a">ج: يظهر عند تعديل نطاق صفحات كتاب تم توزيعه في السابق، وينبه المستخدم إلى أن التقسيم الجديد سيُحفظ في مجلد مستقل دون حذف التقسيم السابق حفاظاً على سجلات الفرق.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س13: ما هي صلاحية الرابط في تبويب «كتبي»؟</div>
+        <div class="faq-a">ج: يرى الرابط جميع أجزاء فرق فرعه الإشرافي، ويملك صلاحية التأشير «تم» نيابة عن أي فريق مع قيد ذلك تلقائياً في سجل الرقابة (Audit Log).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س14: متى يتم حذف ملفات أجزاء الكتب من Google Drive نهائياً؟</div>
+        <div class="faq-a">ج: تُحذف ملفات الأجزاء تلقائياً ونهائياً بعد انقضاء 21 يوماً من تاريخ تأشير كافة الأفرقة المسند إليها هذا الجزء كمنجز («تم»)، عبر مشغل يومي يعمل عند الساعة 05:00 فجراً.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">س15: كيف أصل إلى عرض غابة أنيس ثلاثية الأبعاد (3D Forest)؟</div>
+        <div class="faq-a">ج: من تبويب «الفرق»، يضغط الأدمن على زر «عرض ثلاثي الأبعاد» ليفتح العرض في نافذة مستقلة، أو يضغط «نسخ رابط العرض» لمشاركة الرابط التفاعلي المباشر.</div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: TROUBLESHOOTING -->
+    <section id="troubleshoot">
+      <h2 data-i18n="troubleshoot_title">8. استكشاف الأخطاء وحلولها (Troubleshooting)</h2>
+
+      <div class="step-card">
+        <h3 data-i18n="troubleshoot_p1_t">الرمز السري مقفل أو منسي</h3>
+        <p data-i18n="troubleshoot_p1_d">تواصل مع مسؤول الرابطين (الأدمن) لإعادة تعيين الرمز السري من جدول المستخدمين وتوليد رمز مؤقت.</p>
+      </div>
+
+      <div class="step-card">
+        <h3 data-i18n="troubleshoot_p2_t">الأسبوع مغلق ولا يقبل التعديل</h3>
+        <p data-i18n="troubleshoot_p2_d">الأسبوع المغلق يكون للقراءة فقط. في الحالات الضرورية، يمكن للأدمن وحده استخدام زر «إعادة فتح» ثم إغلاقه مجدداً.</p>
+      </div>
+
+      <div class="step-card">
+        <h3 data-i18n="troubleshoot_p3_t">تعذر الحفظ في جدول البيانات</h3>
+        <p data-i18n="troubleshoot_p3_d">تأكد من إدخال أرقام صحيحة وخلو الحقول من الأحرف غير الصالحة، وتحقق من اتصالك بالإنترنت وتفعيل زر «حفظ (N)».</p>
+      </div>
+
+      <div class="step-card">
+        <h3 data-i18n="troubleshoot_p4_t">تعذر تقسيم الكتاب أو بقاء الأجزاء بحالة معلقة</h3>
+        <p data-i18n="troubleshoot_p4_d">التقسيم يتم عبر مشغل خلفي يعمل بعد نحو 60 ثانية لحماية الأداء. انتظر دقيقة إلى دقيقتين ثم حدّث الصفحة لتجد الأجزاء مكتملة.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <button class="modal-close" id="modalClose">&times;</button>
+  <div class="modal-content">
+    <img src="" alt="" class="modal-img" id="modalImg">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+</div>
+
+<!-- Mobile Toggle Button -->
+<button class="mobile-toggle" id="mobileToggle">☰</button>
+
+<script src="i18n.js"></script>
+<script src="guide.js"></script>
+</body>
+</html>
